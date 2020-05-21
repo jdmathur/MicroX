@@ -896,6 +896,7 @@ p {
 
 .single-service {
   border: 1px solid #eceff8;
+  background-color: white;
   border-radius: 5px;
   padding: 25px 25px 25px 0px;
   -webkit-transition: all 0.3s ease-out 0s;
