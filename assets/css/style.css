@@ -579,7 +579,7 @@ p {
 .header-content {
   height: 630px;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 130px;
   position: relative;
   overflow: hidden;
   background-color: #fbfbfb; }
@@ -784,6 +784,15 @@ p {
           color: #fff;
           background-color: #d7564f;
           border-color: #d7564f; }
+  
+.sub-title {
+  font-size: 30px;
+  color: #d7564f;
+  text-transform: uppercase;
+  padding-bottom: 15px; }
+  @media (max-width: 767px) {
+    .sub-title {
+      font-size: 24px; } }
 
 /*===========================
         3.ABOUT css 
@@ -886,10 +895,9 @@ p {
 }
 
 .single-service {
-  background-color: #fff;
   border: 1px solid #eceff8;
   border-radius: 5px;
-  padding: 25px;
+  padding: 25px 25px 25px 0px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -920,6 +928,32 @@ p {
     -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
     -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
     box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); }
+  
+  .service-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #32333c;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+
+    .service-title-white {
+      font-size: 22px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 20px;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+
+.car-image {
+  padding-left: 0px;
+}
 
 /*===========================
     4.CALL TO ACTION css 
@@ -1009,6 +1043,7 @@ p {
   .sol-list {
     list-style-type: disc;
     color: white;
+    padding-left: 25px;
   }
   .single-work .work-overlay {
     position: absolute;
