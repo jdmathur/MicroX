@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;1,600&family=Rubik&display=swap');
+
+body{
+    font-size: 62.5%;
+    padding:2rem;
+    min-width: 400px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar_items{
+    font-size: 15px;
+    font-weight: 500;
+    color:#333333;
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar_items:hover{
+    color: #D7574F ;
+}
+
+.about_arrow{
+    transform: rotate(90deg);
+    margin-top: 2rem;
+}
+
+.about_arrow:hover, .arrow:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none !important;
+
+}
+
+.top_header{
+    margin-top: 3rem;
+    opacity: 1;
+    background-image: url('assets/top_header.png');
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 28rem;
+    background-color: #F0F0EF;
+    border: none;
+    border-radius: 10px;
+}
+
+.task_images{
+    border: none;
+    width:32%;
+}
+
+.task_text{
+    font-size: 0.8rem;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+}
+
+.card_content{
+    padding-left: 15%;
+    padding-top:5rem;
+    width: 55%;
+}
+
+.header_content{
+    letter-spacing: -0.9px;
+    color: #69120F;
+    font-size: 2.3vw;
+    line-height: 2.3rem;
+    font-smooth: 6em;
+    font-weight: 400;
+    font-family: 'Nunito sans',sans-serif;
+}
+
+.content{
+    margin-top: 2rem;
+    color: #333333;
+    font-family:'Rubik',sans-serif ;
+    font-weight: 400;
+    font-size: 0.9rem;
+letter-spacing: -0.45px;
+}
+
+.container{
+    width:60%;
+    margin-top: 2rem;
+    color:#333333;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    
+}
+
+
+.teams_container{
+    width:60%;
+    margin-top: 2rem;
+    color:#333333;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.validation_conatiner{
+    border-bottom: #e5e5e5 solid 0.1em;
+    width:55%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.validation_header{
+    font-family: 'Nunito',sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    color: #333333;
+    padding-top: 1rem;
+}
+
+.homecyte_slider{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.mobile_view{
+    display: none;
+}
+
+.nav-pills .nav-link{
+    border-radius: 2rem;
+    height: 2rem;
+    color: #333333;
+    font-weight: 600;
+}
+
+.slider{
+    width: 90%;
+}
+
+.slider_partner{
+    width:40%;
+}
+
+.slider, .slider_partner{
+    background-color: #F0F0EF;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-pills .nav-link.active{
+    background-color:#69120F;
+} 
+
+.labs_video{
+    border-radius: 5px;
+    width:"60%";
+}
+
+.publications_container{
+    background-color: #F0F0EF;
+    width:100%;
+    border-radius: 10px;
+    min-height:3rem ;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.publication_header{
+    font-size: 1.3rem;
+    font-family: 'Nunito',sans-serif;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.publications_list{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.publication_images_container{
+    background-color: transparent;
+    width: 24%;
+    border: none;
+}
+
+.publication_images{
+    height: 7rem;
+    padding:0 0.7rem;
+    border-radius: 1rem;
+}
+
+.publication_subtext{
+    color: #4f4f4f;
+}
+
+.team_container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.team_member_name{
+    font-size: 1.3rem;
+}
+
+.team_member_name, .values_title{
+    color: #69120F;
+}
+
+.values_title{
+    font-size: 0.9rem;
+    font-family:'Nunito',sans-serif ;
+    font-weight: 600;
+}
+
+li{
+    color: #69120F;
+}
+
+span{
+    color:#333333;
+}
+.values_content, .overview_content{
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+
+.components_image{
+    width: 90%;
+    height: 90%;
+}
+
+
+
+.overview_content{
+    width: 50%;
+}
+
+.overview_header{
+    font-weight: 500;
+}
+
+.overview_image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.team_member_content{
+    font-size: 0.8rem;
+}
+
+.team_member_image{
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-item{
+    border:none;
+    margin:0;
+}
+
+.team_member_card{
+    width: 48%;
+    border: none;
+    background-color: #F0F0EF;
+    border-radius: 8px;
+}
+
+.scientific_advisors{
+    width: 32%;
+    border: none;
+    background-color: #F0F0EF;
+    border-radius: 10px;
+}
+
+.sub_footer{
+    font-size: 0.8rem;
+    color:#999999;
+    text-align: center;
+}
+
+.message_box{
+    width: 49%;
+    border-radius: 1rem;
+    background-color: #F9CECF;
+    padding:1.5rem;
+}
+
+input, textarea{
+    border: none !important;
+    outline: none;
+    border-radius: 8px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 0.8rem;
+    color: #999999;
+}
+
+textarea{
+    resize: none;
+}
+
+.sub_footer{
+    margin-top: 2rem;
+}
+
+.send_button{
+    background-color:#69120F;
+    outline: none;
+    width:7rem;
+    border-radius: 2.5rem;
+    border: none;
+}
+
+.send_button:hover{
+    background-color: #D7574F;
+}
+
+.footer{
+    background-color: #333333;
+    border-radius: 1rem;
+}
+
+.footers{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.team_member_designation{
+    font-size: 1rem;
+}
+
+.validation_content{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.spc{
+    height:80%;
+}
+
+.homecyte_header{
+   padding-top: 1rem;
+}
+
+.solution_subheader{
+    font-size:1.3rem ;
+    margin-top: 0.5rem;
+}
+
+.overview_container{
+    display: flex;
+    justify-content:space-between;
+}
+
+.values_margin{
+    margin-top: 2rem;
+}
+
+.values_points{
+    width:30%;
+}
+
+.one{
+    background-color: #333333;
+}
+
+.two{
+    background-color: #060027;
+    padding: 0 1rem;
+}
+
+.three{
+    background-color: #F9CECF;
+    padding:2.2rem ;
+}
+
+.four{
+    background-color: #FFFFFF;
+    padding:2.8rem 2.2rem;
+}
+
+.team_mem{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 100%;
+}
+
+.mem_image{
+    width: 50%;
+    height: 100%;
+
+}
+
+.scientific_adv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_us_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 60%;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2.7px;
+    background-color: rgb(164, 163, 163);
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .scientific_adv_mob{
+    background-color: #F0F0EF;
+    border-radius: 2rem;
+    color: #69120F;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel-control-prev:hover{
+    color: #69120F;
+  }
+
+  .carousel-inner{
+    margin-top: 1.5rem;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    align-items:flex-start;
+    top:0.6rem;
+    color: #69120F;
+
+  }
+
+  .carousel-control-next-icon{
+    background-image: url('assets/ARROW.svg');
+  }
+
+  .carousel-control-prev-icon{
+    background-image: url('assets/ARROW.svg');
+    transform: rotate(180deg);
+  }
+
+  .publications_subtext{
+    font-size: 0.7rem;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 500;
+}
+
+.mobile_header{
+    display: none;
+}
+
+.video_container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pattern{
+    background-image: url('assets/pattern.png');
+    background-repeat: no-repeat;
+    background-size: 15vw 40vh;
+    background-position: right;
+}
+
+.section{
+    width: 80%;
+}
+
+.contact_us{
+    width: 100%;
+    background-image: url('assets/pattern_2.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.logo{
+    width: 15%;
+}
+
+.team_box{
+    width: 50%;
+}
+
+
+@media(max-width:1300px){
+    .slider_partner{
+        width: 60%;
+    }
+
+    .pattern{
+        background-size: 10vw 30vh;
+    }
+
+    .components_image{
+        width: 90%;
+        height: 70%;
+    }
+}
+
+@media(max-width:1000px){
+    .slider_partner{
+        width: 80%;
+    }
+
+    .section{
+        width: 95%;
+    }
+
+    .footers{
+        padding: 0.5rem;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .container, .publications_list, .validation_conatiner, .video_container{
+        width: 80%;
+    }
+
+    .slider_partner{
+        width:70%;
+    }
+
+    .footers{
+        padding: 0.5rem 0.4rem;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .contact_us, .pattern{
+        background-image: none;
+    }
+
+    
+
+}
+
+@media(max-width:800px){
+    .slider_partner{
+        width:80%;
+    }
+}
+
+
+
+
+@media (max-width:600px) {
+    .header_content{
+        font-size: 1.5rem;
+    }
+
+    .spc{
+        height: auto;
+    }
+
+    .team_box, .publication_images_container, .video_container, .values_points, .box, .message_box, .mem_image{
+        width: 100%;
+    }
+
+    .pattern{
+        background-image: none;
+    }
+    .team_member_name{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .values_content{
+        font-weight: 400;
+    }
+
+    .team_member_image{
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .logo{
+        margin-bottom: 1.5rem;
+        width: 40%;
+    }
+
+    .webview, .header{
+        display: none;
+    }
+
+    .labs_video{
+        width: 90%;
+    }
+
+    .mobile_view{
+        display: block;
+    }
+
+    .overview_header{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+
+    .navbar{
+        padding:0;
+        margin-bottom: 2rem;
+    }
+
+    .top_header{
+        background-image: url('assets/heater_mobile.png');
+        background-position:center;
+        height: 33rem;
+    }
+
+    .footer_container{
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .card_content{
+        padding: 1rem;
+    }
+
+    .contact_us_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scientific_advisors{
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+
+    .message_text{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .supp{
+        width:49%;
+        margin-bottom: 1.5rem;
+    }
+
+    .scientific_adv, .team_container, .overview_container{
+        flex-direction: column;
+    }
+
+
+    .team_mem{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .one{
+        padding:1.5rem 2rem;
+    }
+
+    .two{
+        padding: 3rem 3rem;
+    }
+
+    .three{
+        padding: 3.5rem 4rem;
+    }
+
+    .four{
+        padding: 3.7rem 4rem;
+    }
+
+    .team_member_card, .task_images, .card_content, .validation_conatiner, .overview_content{
+        width: 100%;
+    }
+    
+
+    .task_text,  .solution_subheader{
+    font-size:1rem;
+    }
+
+
+    .teams_header{
+        font-size: 1.8rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .publication_images{
+        height: 10rem;
+        border-radius: 1rem;
+    }
+
+    .publications_list, .values_point{
+        width: 90%;
+    }
+
+    .values_margin,  .top_header{
+        margin-top: 0;
+    }
+
+    .container, .teams_container{
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .values_header, .validation_header{
+        font-weight: 500;
+    }
+
+    .validation_content{
+        margin-top: 1rem;
+        width:90%;
+        padding-bottom: 0rem;
+    }
+
+    .homecyte_slider{
+        margin-top: 1rem;
+        display: none;
+    }
+    
+}

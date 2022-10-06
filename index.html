@@ -1,681 +1,1488 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--====== Title ======-->
+    <link rel="stylesheet" href="global.css" />
     <title>MicroX Labs</title>
+  </head>
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  <script>
+    document.getElementById("mobile_header").style.display="none";
+  </script>
+  <body onresize="onLoad()" onload="onLoad()">
+    <!-- navbar for web view-->
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="assets/logo.png"
+          width="130"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
 
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <ul id="web_header" class="nav header">
+        <li class="nav-item">
+          <a class="navbar_items" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar_items" href="#solution">Solution</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar_items" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar_items" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar_items" href="#partners">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar_items" href="#contact_us">Contact Us</a>
+        </li>
+      </ul>
 
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+      <!-- hamburger icon for mobile view -->
+      <div id="hamburger" class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
 
 
-</head>
+    <!-- navbar for mobile view -->
+      <nav class="nav flex-column align-items-center">   
+      <ul id="mobile_header" class="nav mobile_header">
+          <a class="navbar_items" onclick="myFunction()" href="#about">About</a>
+          <a class="navbar_items" onclick="myFunction()" href="#solution">Solution</a>
+          <a class="navbar_items" onclick="myFunction()" href="#publications">Publications</a>
+          <a class="navbar_items" onclick="myFunction()" href="#team">Team</a>
+          <a class="navbar_items" onclick="myFunction()" href="#partners">Partners</a>
+          <a class="navbar_items" onclick="myFunction()" href="#contact_us">Contact Us</a>
+      </ul>
+    </nav>
 
-<body>
-
-    <!--====== PRELOADER PART START ======-->
-
-    <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- top header -->
+    <div id="page">
+    <div id="about" class="card top_header">
+      <div class="card-body card_content">
+        <div class="header_content">
+          We strive to <strong>the health & survival rates</strong> in cancer
+          care!
         </div>
+
+        <div class="content">
+          During oncology treatments, frequent visits to the
+          physician/practioner are common place to understand the progress of
+          treatment.<br />
+          <br />
+          The relevant blood tests associated with therapy majorly involve
+          infection level monitoring and internal bleeding evaluation.
+        </div>
+
+        <a  href="#solution">
+            <img class="about_arrow" src="assets/ARROW.svg" >
+        </a>
+      </div>
     </div>
 
-    <!--====== PRELOADER ENDS START ======-->
+    <!-- validation partners -->
+    <div class="validation_conatiner">
+      <div class="row d-flex justify-content-center validation_header">
+        Our validation partners
+      </div>
+      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-between validation_content">
+        <img
+          src="assets/parners__0008_Warstwa-1.png"
+          class="d-inline-block align-top logo"
+          alt=""
+        /><img
+          src="assets/parners__0007_Warstwa-2.png"
+          class="d-inline-block align-top logo"
+          alt=""
+        /><img
+          src="assets/parners__0006_Warstwa-3.png"
+          style="align-self: center;"
+          class="d-inline-block align-top logo spc"
+          alt=""
+        /><img
+          src="assets/parners__0005_Warstwa-4.png"
+          class="d-inline-block align-top logo"
+          alt=""
+        /><img
+          src="assets/parners__0004_Warstwa-5.png"
+          class="d-inline-block align-top logo"
+          alt=""
+        /><img
+          src="assets/parners__0006_Warstwa-4.png"
+          class="d-inline-block align-top logo"
+          alt=""
+        />
+      </div>
+      </div>
+    </div>
 
-    <!--====== HEADER PART START ======-->
+    <!-- solutions section for web view-->
+    <div id="solution" class="container" style="font-size: 1.7rem">
+      <div class="row d-flex justify-content-center homecyte_header">
+        Introducing
+        <div style="font-weight: 600; color: #69120f; margin-left: 0.5rem">
+          HomeCyte<sup>TM</sup>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center solution_subheader">
+        A portable, point-of-care blood analyzer.
+      </div>
+      <div class="row homecyte_slider">
+        <nav
+          class="nav nav-pills flex-column flex-sm-row d-flex justify-content-center slider"
+        >
+          <a
+            id="tab-1"
+            class="flex-sm-fill text-sm-center nav-link active"
+            data-toggle="tab"
+            aria-current="page"
+            href="#overview"
+            >OVERVIEW</a
+          >
+          <a
+            id="tab-2"
+            class="flex-sm-fill text-sm-center nav-link"
+            data-toggle="tab"
+            href="#components"
+            >COMPONENTS</a
+          >
+          <a
+            id="tab-3"
+            class="flex-sm-fill text-sm-center nav-link"
+            data-toggle="tab"
+            href="#values"
+            >VALUES</a
+          >
+          <a
+            id="tab-4"
+            class="flex-sm-fill text-sm-center nav-link"
+            data-toggle="tab"
+            href="#the_test"
+            >THE TEST</a
+          >
+        </nav>
+      </div>
+    </div>
 
-    <header id="home" class="header-area">
-        <div class="navigation fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.jpg" alt="Logo">
-                            </a> <!-- Logo -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
+    <div style="width: 100%;" class="tab-content webview pattern">
+        <div
+          id="the_test"
+          class="container tab-pane"
+          style="padding: 0; margin-top: 0.5rem"
+        >
+          <div class="row" style="font-size: 1.2rem; margin-bottom: 2rem">
+            How to perform the test - easy and simple
+          </div>
+  
+          <div class="row d-flex justify-content-between">
+            <div class="card task_images">
+              <img
+                class="card-img-top"
+                src="assets/Mask Group 1.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text d-flex justify-content-center values_content">
+                  Log in
+                </p>
+              </div>
+            </div>
+  
+            <div class="card task_images">
+              <img
+                class="card-img-top"
+                src="assets/Mask Group 2.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text d-flex justify-content-center values_content">
+                  Choose ,,Patient Test''
+                </p>
+              </div>
+            </div>
+  
+            <div class="card task_images">
+              <img
+                class="card-img-top"
+                src="assets/Mask Group 3.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text d-flex justify-content-center values_content">
+                  Scan the patient ID, scan the PAQ barcode
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row d-flex justify-content-between">
+            <div class="card task_images">
+              <img
+                class="card-img-top"
+                src="assets/Mask Group 4.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text d-flex justify-content-center values_content">
+                  Collect the blood and fill one drop into the PAQ
+                </p>
+              </div>
+            </div>
+  
+            <div class="card task_images">
+              <img
+                class="card-img-top"
+                src="assets/STEP_5.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text d-flex justify-content-center values_content">
+                  Insert PAQ and wait approx. 7 minutes
+                </p>
+              </div>
+            </div>
+  
+            <div class="card task_images">
+              <img
+                class="card-img-top"
+                src="assets/Mask Group 5.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text d-flex justify-content-center values_content">
+                  Stream the results
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="values" class="container tab-pane">
+          <p class="values_header">
+            We provide value for both - patients & healthcare providers.
+          </p>
+          <div class="overview_container values_margin">
+            <div class="values_points">
+              <p class="values_title">Reducing infection risks</p>
+              <p class="values_content">
+                Severely reducing risks of at-hospital infection for patients.
+              </p>
+            </div>
+  
+            <div class="values_points">
+              <p class="values_title">Comfort</p>
+              <p class="values_content">
+                Patients take comfort of their homes or at point-of-care.
+              </p>
+            </div>
+  
+            <div class="values_points">
+              <p class="values_title">Cost - saving</p>
+              <p class="values_content">
+                Decreasing the patient need to visit hospital to get diagnosed
+                reduces costs.
+              </p>
+            </div>
+          </div>
+  
+          <div class="overview_container values_margin">
+            <div class="values_points">
+              <p class="values_title">Instant medical help</p>
+              <p class="values_content">
+                1 hour delay in antibiotic dosage increases mortality by 8%.
+              </p>
+            </div>
+  
+            <div class="values_points">
+              <p class="values_title">Versatile</p>
+              <p class="values_content">
+                Many parameters means a single device for greater diagnostics
+                value.
+              </p>
+            </div>
+  
+            <div class="values_points">
+              <p class="values_title">Time - saving</p>
+              <p class="values_content">
+                Empowering chronic care management processes saves time for
+                clinicians.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="components" class="container tab-pane">
+          <div class="overview_header">
+            The solution consists of a few hardware components.
+          </div>
+          <div class="overview_container">
+            <div class="overview_content">
+              <p style="margin-top: 2rem">
+                As well as algorithmics, which are machine learning classifiers
+                trained to pick electrical signature to quantify size, shape and
+                granularity of each cell and for optical signatures of protein
+                measurements.
+              </p>
+              <ul>
+                <li>
+                  <span><strong>Reader</strong>
+                  <p style="margin-top: 1rem">
+                    A portable device to insert cartridges and stream the results
+                    to cloud.
+                  </p>
+                </li>
+                <li><span>
+                  <strong>Cartridges</strong>
+                  <p style="margin-top: 1rem">
+                    A consumable needed to perform the tests, loaded with reagents
+                    with integrated cell flow. Cartridge is repurposable for
+                    various tests.
+                  </p></span>
+                </li>
+                <li><span>
+                  <strong>The sensor</strong>
+                  <p style="margin-top: 1rem">
+                    A Microfluidics impedance cytometer for measuring cellular 3-
+                    dimensional information of up to 1 micron.
+                  </p></span>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="overview_image">
+              <img src="assets/Image 12.png" class="components_image">
+            </div>
+          </div>
+        </div>
+  
+        <div id="overview" class="container tab-pane active">
+          <div class="overview_header">HomeCyte</div>
+          <div class="overview_container">
+            <div class="overview_content">
+              <p style="margin-top: 2rem">
+                HomeCyte is a remote patient monitoring tool, to help reduce the
+                stress to manage cancer care for all stake holders’ patients,
+                physicians and payers.
+              </p>
+              <p>
+                It comprises of a portable instrument and disposable set of
+                cartridges or measurement of:
+              </p>
+              <ul style="margin-left:-1.5rem ;">
+                <li>
+                  <span><strong>CBC (complete blood cell count)</strong> in under 7
+                  minutes</span>
+                </li>
+                <li>
+                  <span><strong>Protein markers</strong> (C-reactive protein,
+                  Procalcitonin and IL-6 in) under 20 minutes each.</span>
+                </li>
+              </ul>
+            </div>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#features">Features</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#mission">Mission</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#solution">Solution</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navigation -->
+            <div style="width: 50%;">
+              <img src="assets/image_1_2.png" width="100%" style="margin-top: -15%;">
+            </div>
 
-        <div id="parallax" class="header-content d-flex align-items-center"  style="background-image: url(assets/images/home.png); background-color: #f4f6f9; background-size: contain; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <div class="section-title">
-                            <h2 class="title">We are an Infection </br> diagnostics company</h2>
-                            <p>Our patents, algorithms, and innovation in hardware  </br>
-                                and software allows us to bring near 100% accuracy to  </br>
-                                the doctor's office and eventually the home
-                            <div class="mt-50">
-                                <a class="main-btn" href="#video">Explore Now</a>
-                                <a style="color: #d7564f;" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More</a>
-                            </div>
-                        </div> <!-- header content right -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- header content -->
-    </header>
+          </div>
+        </div>
 
-    <!--====== HEADER PART ENDS ======-->
+      </div>
 
-    <!--====== FEATURES PART START ======-->
 
-    <section id="features" class="services-area pt-100 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30">
-                        <h2 class="title">What are we Building?</h2>
-                        <p>We build homecare solutions for the medical field of oncology</p>
-                    </div> <!-- section title -->
+    <!-- solutions section for mobile view -->
+    <div class="row mobile_view">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide carousel-fade"
+          data-wrap="false"
+        >
+          <nav class="carousel-inner">
+            <div class="carousel-item active" >
+              <div class="d-flex justify-content-center scientific_adv_mob">
+                OVERVIEW
+              </div>
+              <div class="overview_header">HomeCyte</div>
+        <div class="overview_container">
+          <div class="overview_content">
+            <p style="margin-top: 2rem">
+              HomeCyte is a remote patient monitoring tool, to help reduce the
+              stress to manage cancer care for all stake holders’ patients,
+              physicians and payers.
+            </p>
+            <p>
+              It comprises of a portable instrument and disposable set of
+              cartridges or measurement of:
+            </p>
+            <ul style="margin-left:-1.5rem ;">
+              <li><span>
+                <strong>CBC (complete blood cell count)</strong> in under 7
+                minutes</span>
+              </li>
+              <li><span>
+                <strong>Protein markers</strong> (C-reactive protein,
+                Procalcitonin and IL-6 in) under 20 minutes each.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="overview_image">
+            <img src="assets/image_1.png" width="250%" style="margin-left: -70%;">
+          </div>
+        </div>
+
+                
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center scientific_adv_mob">
+                COMPONENTS
+              </div>
+              <div class="overview_header">
+                The solution consists of a few hardware components.
+              </div>
+              <div class="overview_container">
+                <div class="overview_content">
+                  <p style="margin-top: 2rem">
+                    As well as algorithmics, which are machine learning classifiers
+                    trained to pick electrical signature to quantify size, shape and
+                    granularity of each cell and for optical signatures of protein
+                    measurements.
+                  </p>
+                  <ul style="margin-left:-1.5rem ;">
+                    <li><span>
+                      <strong>Reader</strong>
+                      <p style="margin-top: 1rem">
+                        A portable device to insert cartridges and stream the results
+                        to cloud.
+                      </p></span>
+                    </li>
+                    <li><span>
+                      <strong>Cartridges</strong>
+                      <p style="margin-top: 1rem">
+                        A consumable needed to perform the tests, loaded with reagents
+                        with integrated cell flow. Cartridge is repurposable for
+                        various tests.
+                      </p></span>
+                    </li>
+                    <li><span>
+                      <strong>The sensor</strong>
+                      <p style="margin-top: 1rem">
+                        A Microfluidics impedance cytometer for measuring cellular 3-
+                        dimensional information of up to 1 micron.
+                      </p></span>
+                    </li>
+                  </ul>
                 </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-service text-center mt-30">
-                        <div class="service-icon">
-                            <img src="assets/images/work/01.png">
-                        </div>
-                        <div class="service-content">
-                            <h4 class="service-title"><a href="#">Easy application</a></h4>
-                            <p>with results in less than 5 mins <br> &nbsp;</p>
-                        </div>
-                    </div> <!-- single service -->
+
+                <div class="overview_image">
+                    <img src="assets/Image 12.png" width="190%" style="align-self:center;">
+                  </div>
+              </div>
+            </div>
+                
+               <div class="carousel-item">
+              <div class="d-flex justify-content-center scientific_adv_mob">
+                VALUES
+              </div>
+              <p class="overview_header">
+                We provide value for both - patients & healthcare providers.
+              </p>
+              <div class="overview_container values_margin">
+                <div class="values_points">
+                  <p class="values_title">Reducing infection risks</p>
+                  <p class="values_content">
+                    Severely reducing risks of at-hospital infection for patients.
+                  </p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-service text-center mt-30">
-                        <div class="service-icon">
-                            <img src="assets/images/work/02.png">
-                        </div>
-                        <div class="service-content">
-                            <h4 class="service-title"><a href="#">Monitor the side-effects</a></h4>
-                            <p>of Chemotherapy and infection  </br> level of COVID 19 at point-of-care</p>
-                        </div>
-                    </div> <!-- single service -->
+      
+                <div class="values_points">
+                  <p class="values_title">Comfort</p>
+                  <p class="values_content">
+                    Patients take comfort of their homes or at point-of-care.
+                  </p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-service text-center mt-30">
-                        <div class="service-icon">
-                            <img src="assets/images/work/03.png">
-                        </div>
-                        <div class="service-content">
-                            <h4 class="service-title"><a href="#">Results delivered</a></h4>
-                            <p>directly to your physician  <br> &nbsp;</p>
-                        </div>
-                    </div> <!-- single service -->
+      
+                <div class="values_points">
+                  <p class="values_title">Cost - saving</p>
+                  <p class="values_content">
+                    Decreasing the patient need to visit hospital to get diagnosed
+                    reduces costs.
+                  </p>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== FEATURES PART ENDS ======-->
-
-    <!--====== MISSION PART START ======-->
-
-    <section id="mission" class="work-area pt-80 pb-130" style="background-color: white;">
-        <div class="container">
-            <div class="row">
-                <div class="section-title col-lg-12">
-                        <h2 class="title text-center">We use innovative technology</h2>
+              </div>
+      
+              <div class="overview_container values_margin">
+                <div class="values_points">
+                  <p class="values_title">Instant medical help</p>
+                  <p class="values_content">
+                    1 hour delay in antibiotic dosage increases mortality by 8%.
+                  </p>
                 </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="offset-lg-1 col-lg-4 col-sm-12">
-                    <video autoplay muted loop width="450" height="300" style="clip-path: inset(60px 15px 50px 10px);">
-                        <source src="assets/video/animation.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
+      
+                <div class="values_points">
+                  <p class="values_title">Versatile</p>
+                  <p class="values_content">
+                    Many parameters means a single device for greater diagnostics
+                    value.
+                  </p>
                 </div>
-                <div class="offset-lg-1 col-lg-6 col-sm-12 mt-50">
-                    <div class="col-lg-12">
-                        <div class="single-work">
-                            <div class="work-image">
-                                <img class="col-lg-2" src="assets/images/work/04.png">
-                                <span class="service-title col-lg-9">Disposable cartridges</span>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-work mt-30">
-                            <div class="work-image call-action-content" >
-                                <img class="col-lg-2" src="assets/images/work/06.png">
-                                <span class="service-title col-lg-9">Novel bio-sensors</span>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-work mt-30">
-                            <div class="work-image call-action-content">
-                                <img class="col-lg-2" src="assets/images/work/05.png">
-                                <span class="service-title col-lg-9">Machine learning classifiers</span>
-                            </div>
-                        </div> <!-- single work -->
-                    </div>
+      
+                <div class="values_points">
+                  <p class="values_title">Time - saving</p>
+                  <p class="values_content">
+                    Empowering chronic care management processes saves time for
+                    clinicians.
+                  </p>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+              </div> 
+            </div>
 
-    <!--====== MISSION PART ENDS ======-->
-
-    <!--====== PUBLICATION PART START ======-->
-
-    <section id="publications" class="work-area pt-50 pb-60 bg_cover">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="row section-title text-center ">
-                    <h2 class="col-lg-12 title">Publications</h2>
-                    <div class="service-icon col-lg-4 mt-30">
-                        <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/ijlh.13105" target="_blank"><img class="pub-img" src="assets/images/publication/01.png"></a>
-                    </div>
-                    <div class="service-icon col-lg-4 mt-30">
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8711431" target="_blank"><img class="pub-img" src="assets/images/publication/02.png"></a>
-                    </div>
-                    <div class="service-icon col-lg-4 mt-30">
-                        <a href="https://www.nature.com/articles/s41598-019-54006-3" target="_blank"><img class="pub-img" src="assets/images/publication/03.png"></a>
-                    </div>
-                </div> <!-- call action content -->
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== PUBLICATION PART ENDS ======-->
-
-    <!--====== SOLUTION PART START ======-->
-
-    <section id="solution" class="work-area pt-80 pb-130 call-to-action" style="background-image: url(assets/images/solution.png); background-size: contain;">
-        <div class="container">
-            <div class="row justify-content-center pb-20">
-                <div class="call-action-content">
-                    <h2 class="action-title text-center">Our Solution</h2>
-                    <h4 class="action-sub-title text-center">Repurposable Cartridge with pre-loaded reagents using same reader</h4>
-                </div> <!-- section title -->
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class=" col-lg-8 col-sm-12">
-                    <div class="single-service row"  style="background-color: transparent;">
-                        <div class="service-icon car-image col-lg-5">
-                            <img src="assets/images/car1.png">
-                        </div>
-                        <div class="service-content col-lg-7">
-                            <span class="service-title-white">Cartridge for Complete Blood Count</span>
-                            <ul class="sol-list">
-                                <li>Lymphocytes & Granulocytes</li>
-                                <li>Monocyte Distribution Width</li>
-                                <li>Platelets</li>
-                                <li>Results in 7 minutes</li>
-                            </ul>
-                        </div>
-                    </div> <!-- single service -->
+            <div class="carousel-item" >
+                <div class="d-flex justify-content-center scientific_adv_mob">
+                  THE TEST
                 </div>
-                <div class="col-lg-8 col-sm-12">
-                    <div class="single-service row mt-30" style="background-color: transparent;">
-                        <div class="service-icon car-image col-lg-5">
-                            <img src="assets/images/car2.png">
-                        </div>
-                        <div class="service-content col-lg-7">
-                            <span class="service-title-white">Cartridge for Infection Level diagnosis</span>
-                            <ul class="sol-list">
-                                <li>C-Reactive Protein (CRP)</li>
-                                <li>Procalcitonin</li>
-                                <li>Lactate</li>
-                                <li>Results in 30 minutes</li>
-                            </ul>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== MISSION PART ENDS ======-->
-
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area pt-125 pb-130" style="background-image: url(assets/images/about.jpg); background-color: #f4f6f9; background-repeat: no-repeat;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-25">
-                        <h2 class="title">MicroX Labs</h2>
-                        <p>
-                            Our focus is currently on the development of affordable and accessible CBC homecare devices 
-                            for cancer patients. We also work on applications for infertility and flu.
+                
+                <div class="overview_header" style="font-size: 1.2rem; margin-bottom: 2rem">
+                    How to perform the test - easy and simple
+                  </div>
+          
+                  <div class="row d-flex justify-content-between">
+                    <div class="card task_images">
+                      <img
+                        class="card-img-top"
+                        src="assets/Mask Group 1.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text d-flex justify-content-center task_text">
+                          Log in
                         </p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <h4 class="sub-title col-lg-12 mt-30 text-center">Team</h4>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/vish.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Vish Narayan</h3>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/vish-narayanan-155814/" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/dubuc.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Dubuc Christian</h3>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/dubuc-christian-dg-industry/" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/prakhar.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Prakhar Jain</h3>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/prakharjain1/" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/usama.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Usama Abbasi</h3>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/usama-abbasi-67a05754/" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <h4 class="sub-title col-lg-12 mt-30 text-center">Scientific & Academic collaborations</h4>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/morgan.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Prof Hywel Morgan</h3>
-                                <ul>
-                                    <li><a href="https://scholar.google.co.uk/citations?user=FbA8v-wAAAAJ&hl=en" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/kumaran.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Prof V Kumaran</h3>
-                                <ul>
-                                    <li><a href="http://scholar.google.com/citations?user=QGPjpnUAAAAJ&hl=en" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/velavan.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Prof T Velavan</h3>
-                                <ul>
-                                    <li><a href="https://scholar.google.co.in/citations?user=t-raQFIAAAAJ&hl=en" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <h4 class="sub-title col-lg-12 mt-30 text-center">Medical Advisors</h4>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/botton.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Dr DE Botton</h3>
-                                <ul>
-                                    <li><a href="https://www.gustaveroussy.fr/en/department-medical-oncology-senior-staff" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/krishna.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Dr Sanjeev Krishna</h3>
-                                <ul>
-                                    <li><a href="http://www.tropmed.ac.uk/" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/hauser.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Sibylle Hauser</h3>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/sibyllehauser" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/team/mulry.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Jim Mulry</h3>
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/jim-mulry-7a3a92143" target="_blank"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+                      </div>
+                    </div>
+          
+                    <div class="card task_images">
+                      <img
+                        class="card-img-top"
+                        src="assets/Mask Group 2.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text d-flex justify-content-center task_text">
+                          Choose ,,Patient Test''
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="card task_images">
+                      <img
+                        class="card-img-top"
+                        src="assets/Mask Group 3.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text d-flex justify-content-center task_text">
+                          Scan the patient ID, scan the PAQ barcode
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="row d-flex justify-content-between">
+                    <div class="card task_images">
+                      <img
+                        class="card-img-top"
+                        src="assets/Mask Group 4.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text d-flex justify-content-center task_text">
+                          Collect the blood and fill one drop into the PAQ
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="card task_images">
+                      <img
+                        class="card-img-top"
+                        src="assets/STEP_5.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text d-flex justify-content-center task_text">
+                          Insert PAQ and wait approx. 7 minutes
+                        </p>
+                      </div>
+                    </div>
+          
+                    <div class="card task_images">
+                      <img
+                        class="card-img-top"
+                        src="assets/Mask Group 5.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text d-flex justify-content-center task_text">
+                          Stream the results
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  
+              </div>
+          </nav>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
 
-    <!--====== ABOUT PART ENDS ======-->
+    
+<!-- publications section -->
+    <div id="publications" class="publications_container">
 
-    <!--====== VIDEO PART START ======-->
+        <!-- publications video -->
+        <div class="d-flex justify-content-center video_container" >
+        <iframe id="video" class="labs_video" width="100%" height="400" src="https://www.youtube.com/embed/GWzwZX2vszU" frameborder="0" allowfullscreen></iframe>
+    </iframe></div>
+          <div class="d-flex justify-content-center publication_header">
+        Publications
+      </div>
+      <div class="row d-flex justify-content-between publications_list">
+        <div class="card publication_images_container">
+          <img
+            class="card-img-top publication_images one"
+            src="assets/header-d3c533c187c710c1bedbd8e293815d5f.svg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="padding: 1.25rem 0">
+            <p class="card-text task_text">
+              A cartridge based Point-of-Care device for complete blood count.
+            </p>
+            <p class="publications_subtext">Scientific reports</p>
+            <p><img src="assets/ARROW.svg" /></p>
+          </div>
+        </div>
 
-    <section id="video" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(assets/images/call-to-action.jpg)">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="row call-action-content text-center ">
-                    <h2 class="col-lg-12 action-title">Our Journey</h2>
-                    <div class="col-lg-12">
-                        <iframe class="col-lg-12"  width="600" height="400" style="padding-left: 0px; padding-right: 0px;"
-                            src="https://youtube.com/embed/WtszPeHOERs?controls=0"> 
-                        </iframe> 
-                    </div>
-                </div> <!-- call action content -->
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+        <div class="card publication_images_container">
+          <img
+            class="card-img-top publication_images two"
+            src="assets/xplore_logo_white.svg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="padding: 1.25rem 0">
+            <p class="card-text task_text">
+              Fabrication of Microfluidic Impedance Cytometer for Leukocytes
+              Analysis
+            </p>
+            <p class="publications_subtext">IEEE Xplore</p>
+            <p><img src="assets/ARROW.svg" /></p>
+          </div>
+        </div>
 
-    <!--====== VIDEO PART ENDS ======-->
+        <div class="card publication_images_container">
+          <img
+            class="card-img-top publication_images three"
+            src="assets/_x31_st_White_S.svg"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="padding: 1.25rem 0">
+            <p class="card-text task_text">
+              A New Approach for Accurate Determination of Particle Sizes in
+              Microfluidic Impedance Cytometry
+            </p>
+            <p class="publications_subtext">SSRN</p>
+            <p><img src="assets/ARROW.svg" /></p>
+          </div>
+        </div>
 
-    <!--====== PARTNERS PART START ======-->
+        <div class="card publication_images_container">
+          <img
+            class="card-img-top publication_images four"
+            src="assets/Image 13.png"
+            alt="Card image cap"
+          />
+          <div class="card-body" style="padding: 1.25rem 0">
+            <p class="card-text task_text">
+              Automatic detection of dysplastic cells using deep learning
+            </p>
+            <p class="publications_subtext">Wiley.com</p>
+            <p><img src="assets/ARROW.svg" /></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <section id="partners" class="work-area pt-100 pb-100 bg_cover">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="row section-title text-center ">
-                    <h2 class="col-lg-12 title">Our Partners & Supporters</h2>
-                    <!--<div class="col-lg-4">
-                        <a href="https://birac.nic.in/desc_new.php?id=217" target="_blank"><img src="assets/images/partner/01.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://www.brinc.pl/" target="_blank"><img src="assets/images/partner/02.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="http://www.millenniumalliance.in/" target="_blank"><img src="assets/images/partner/03.png"></a>
-                    </div> -->
-                    <div class="col-lg-4">
-                        <a href="http://www.lifescience-bw.de/" target="_blank"><img src="assets/images/partner/04.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://sid.iisc.ac.in/" target="_blank"><img src="assets/images/partner/05.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://www.iusstf.org/" target="_blank"><img src="assets/images/partner/06.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://www.merckgroup.com/en" target="_blank"><img src="assets/images/partner/07.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://www.dbs.com/foundation/default.page" target="_blank"><img src="assets/images/partner/08.png"></a>
-                    </div>
-                    <!-- <div class="col-lg-4">
-                        <a href="https://startupspark.io/" target="_blank"><img src="assets/images/partner/09.png"></a>
-                    </div> -->
-                    <div class="col-lg-4">
-                        <a href="" target="_blank"><img src="assets/images/partner/12.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="" target="_blank"><img src="assets/images/partner/13.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="" target="_blank"><img src="assets/images/partner/14.png"></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="" target="_blank"><img src="assets/images/partner/15.png"></a>
-                    </div>
-                </div> <!-- call action content -->
-                <div class="section-title text-center pb-25">
-                    <p>
-                        MicroX Sp. z o.o. implements the project "Development of an innovative 
-                        reader and a set of cartridges for the analysis of CBC + 3DIFF blood 
-                        cells and inflammatory markers for monitoring the health of patients 
-                        infected with coronavirus, including SARS-CoV-2 remotely", co-financed 
-                        under the Smart Growth Operational Program 2014-2020 , 1.1.1 "Industrial 
-                        research and development works carried out by enterprises", agreement no. 
-                        POIR.01.01.01-00-2434 / 20
+    <!-- teams section -->
+    <div style="width:100%">
+    <div id="team" class="teams_container">
+     <div class="d-flex justify-content-center"> <div class="teams_header">
+        The micro<sup>x</sup>labs team
+      </div></div>
+      <div class="team_container">
+        <div class="card mb-3 team_member_card">
+          <div class="team_mem">
+            <div style="padding-left: 1rem" class="team_box">
+              <div class="card-body">
+                <h5 class="card-title team_member_name">Prakhar Jain</h5>
+                <p class="card-text team_member_designation">Co-founder, CEO</p>
+                <ul class="list-group list-group-flush team_member_content">
+                  <div>Chemical engineer</div>
+                  <div>5 years in translational research</div>
+                  <div>3 IPs filed</div>
+                  <div>3 publications</div>
+                </ul>
+
+                    <i
+                  class="fa fa-linkedin-square"
+                  aria-hidden="true"
+                  style="color: #33333340"
+                ></i>
+              </div>
+            </div>
+            <div class="mem_image">
+              <img
+                src="assets/Image 15.png"
+                width="100%"
+                class="team_member_image"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 team_member_card">
+          <div class="team_mem">
+            <div style="padding-left: 1rem" class="team_box">
+              <div class="card-body">
+                <h5 class="card-title team_member_name">Usama Ahmed</h5>
+                <p class="card-text team_member_designation">Co-founder, CTO</p>
+
+                <ul class="list-group list-group-flush team_member_content">
+                  <div>5 years in translational research</div>
+                  <div>4 IPs filed</div>
+                  <div>4 publications</div>
+                </ul>
+                <i
+                  class="fa fa-linkedin-square"
+                  aria-hidden="true"
+                  style="color: #33333340"
+                ></i>
+              </div>
+            </div>
+            <div class="mem_image">
+              <img
+                src="assets/Image 27.png"
+                width="100%"
+                class="team_member_image"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- scientific and clinical partners for web view -->
+      <div class="d-flex justify-content-center"> <div
+        id="partners"
+        class="teams_header"
+        style="margin-top: 2rem"
+      >
+        Our scientific advisors & clinical partners
+      </div></div>
+      <div class="row homecyte_slider">
+        <nav
+          class="nav nav-pills flex-column flex-sm-row d-flex justify-content-center slider_partner"
+        >
+          <a
+            class="flex-sm-fill text-sm-center nav-link active"
+            data-toggle="tab"
+            aria-current="page"
+            href="#scientific_advisors"
+            >SCIENTIFIC ADVISORS</a
+          >
+          <a
+            class="flex-sm-fill text-sm-center nav-link"
+            data-toggle="tab"
+            href="#clinical_partners"
+            >CLINICAL PARTNERS</a
+          >
+        </nav>
+      </div>
+      </div>
+
+      <div style="width:100%">
+      <div class="tab-content webview" >
+        <div class="tab-pane active" id="scientific_advisors" style="width: 60%;margin-left:auto;margin-right: auto;">
+          <div class="scientific_adv" style="margin-top: 2rem">
+            <div class="card scientific_advisors">
+              <img
+                class="card-img-top"
+                src="assets/Image 17.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-title team_member_name">Prof. Hywel Morgan</p>
+                <p class="values_content" style="font-size: 1rem">Electronics and Nanotech</p>
+                <p class="card-text values_content">
+                  University of Southampton, UK Head of Nanofabrication
+                </p>
+                <img src="assets/logo_1.png" style="width: 100%;position: absolute;bottom: 1rem;" />
+              </div>
+            </div>
+
+            <div class="card scientific_advisors">
+              <img
+                class="card-img-top"
+                src="assets/Image 18.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-title team_member_name">Prof. V Kumaran</p>
+                <p class="values_content" style="font-size: 1rem">
+                  Fluid Dynamics
+                </p>
+                <p class="card-text values_content">
+                  Institute Chair Professor at Department of Chemical Engineering, Indian Institute of Science, Bangalore
+                </p>
+                <img src="assets/logo_2.png" style="width: 100%;" />
+              </div>
+            </div>
+
+            <div class="card scientific_advisors">
+              <img
+                class="card-img-top"
+                src="assets/Image 19.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-title team_member_name">Sibylle Hauser</p>
+                <p class="values_content" style="font-size: 1rem">Business Dev, M&A</p>
+                <p class="card-text values_content">
+                  Ex Roche Executive Director, Innovation Services California Life Sciences (CLS)
+                </p>
+                <img src="assets/logo_03.png" style="width:100%;position: absolute;bottom: 1rem;" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="clinical_partners" >
+
+            <div id="clinical_partner_carousel" class="carousel slide" data-wrap="false">
+              <div class="carousel-inner">
+
+
+                <div class="carousel-item active" >
+                  <div style="width: 60%;margin-left:auto;margin-right: auto;">
+                  <div class="row d-flex justify-content-between">
+            <div class="card scientific_advisors">
+              <img
+                class="card-img-top"
+                src="assets/Image 21.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-title team_member_name">Prof. Velavan</p>
+                <p class="values_content" style="font-size: 1rem;min-height: 1rem;">
+                </p>
+                <p class="card-text values_content">
+                  Infectious diseases, antimicrobial resistance, coronavirus, malaria, University of Tubingen, Germany.                </p>
+                <img src="assets/logo_04.png" style="width: 100%;position: absolute;bottom: 1.2rem;" />
+              </div>
+            </div>
+
+            <div class="card scientific_advisors">
+              <img
+                class="card-img-top"
+                src="assets/Image 22.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-title team_member_name">Dr Ryan Shea Tan</p>
+                <p class="values_content" style="font-size: 1rem;min-height: 1rem;">
+                  
+                </p>
+                <p class="card-text values_content">
+                  National Cancer Center, Singapore Chairman, IT enabled workgroup.
+                </p>
+                <img src="assets/logo_05.png" style="width:100%;position: absolute;bottom: 1.2rem;" />
+              </div>
+            </div>
+
+            <div class="card scientific_advisors">
+              <img
+                class="card-img-top"
+                src="assets/Image 23.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-title team_member_name">Jim Mulry</p>
+                <p class="values_content" style="font-size: 1rem;min-height: 1rem;">
+                  
+                </p>
+                <p class="card-text values_content">
+                  Head of Diagnostics Merck Global Health Institute, 35 years of experience in hematology, sales and business development, Global Health Institute
+                </p>
+                <img src="assets/logo_06.png" style="width: 100%;" />
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+            <div class="carousel-item" >
+              <div style="width: 60%;margin-left:auto;margin-right: auto;">
+              <div class="row d-flex justify-content-between" >
+              <div class="card scientific_advisors">
+                <img
+                  class="card-img-top"
+                  src="assets/Image 24.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-title team_member_name">Prof. Nathan Swami</p>
+                  <p class="values_content" style="font-size: 1rem;min-height: 1rem;">
+                    
+                  </p>
+                  <p class="card-text values_content">
+                    Professor of Electrical & Computer Engineering at the, VA University of Virginia, USA
+                  </p>
+                  <img src="assets/logo_07.png" style="width: 100%;" />
+                </div>
+              </div>
+  
+              <div class="card scientific_advisors">
+                <img
+                  class="card-img-top"
+                  src="assets/Image 25.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-title team_member_name">Prof. Ewa Balcerczak</p>
+                  <p class="values_content" style="font-size: 1rem">
+                    Head of laboratory
+                  </p>
+                  <p class="card-text values_content">
+                    Medical University of Łódź, Horiba–Lodz, Poland
+                  </p>
+                  <img src="assets/logo_08.png" style="width:100%;position: absolute;bottom: 1.2rem;" />
+                </div>
+              </div>
+  
+              <div class="card scientific_advisors">
+                <img
+                  class="card-img-top"
+                  src="assets/Image 26.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-title team_member_name">Dr. De Botton</p>
+                  <p class="values_content" style="font-size: 1rem;min-height: 1rem;">
+                    
+                  </p>
+                  <p class="card-text values_content">
+                    Leukemia oncologist (20 years) Gustave Rossy, Paris
+                  </p>
+                  <img src="assets/logo_09.png" style="width:100%;position: absolute;bottom: 1.2rem;" />
+                </div>
+              </div>
+              </div>
+              </div>
+            </div>
+
+              <a class="carousel-control-prev" href="#clinical_partner_carousel" role="button" data-slide="prev" style="align-items:center;">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="width:8%"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#clinical_partner_carousel" role="button" data-slide="next" style="align-items:center;">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="width:8%"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+      <!-- scientific and clinical partners for mobile view -->
+      <div class="row mobile_view">
+        <div
+          id="advisors"
+          class="carousel slide carousel-fade"
+          data-wrap="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center scientific_adv_mob">
+                SCIENTIFIC ADVISORS
+              </div>
+              <div class="scientific_adv" style="margin-top: 2rem">
+
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 17.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">
+                      Prof. Hywel Morgan
                     </p>
+                    <p class="values_content" style="font-size: 1rem">Electronics and Nanotech</p>
+                    <p class="card-text values_content">
+                      University of Southampton, UK Head of Nanofabrication
+                    </p>
+                    <img src="assets/logo_1.png" style="width: 100%;"/>
+                  </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
 
-    <!--====== PARTNERS PART ENDS ======-->
-
-    <!--====== CONTACT PART START ======-->
-
-    <section id="contact" class="contact-area pt-100 pb-130 gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="section-title pb-25">
-                        <h2 class="title">Drop us a message</h2>
-                    </div> <!-- section title -->
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 18.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">
+                      Prof. V Kumaran
+                    </p>
+                    <p class="values_content" style="font-size: 1rem">
+                      Fluid Dynamics
+                    </p>
+                    <p class="card-text values_content">
+                      Institute Chair Professor at Department of Chemical Engineering, Indian Institute of Science, Bangalore
+                    </p>
+                    <img src="assets/logo_2.png" style="width: 100%;" />
+                  </div>
                 </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                        <form id="contact-form" action="https://formspree.io/mbjzlebv" method="POST">
-                            <div class="single-form">
-                                <input class="col-lg-5" type="email" name="email" placeholder="Email">
-                                <input class="offset-lg-1 col-lg-5" type="text" name="subject" placeholder="Subject">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div> <!-- single form -->
-                            <p class="form-message"></p>
-                            <div class="single-form">
-                                <button class="main-btn" type="submit">Send Message</button>
-                            </div> <!-- single form -->
-                        </form>
+
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 19.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">Sibylle Hauser</p>
+                    <p class="values_content" style="font-size: 1rem">Business Dev, M&A</p>
+                    <p class="card-text values_content">
+                      Ex Roche Executive Director, Innovation Services California Life Sciences (CLS)
+                    </p>
+                    <img src="assets/logo_03.png" style="width: 100%;" />
+                  </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
 
-    <!--====== CONTACT PART ENDS ======-->
+            </div>
+            </div>
 
-    <!--====== FOOTER PART START ======-->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center scientific_adv_mob">
+                CLINICAL PARTNERS
+              </div>
 
-    <footer id="footer" class="footer-area">
-        <div class="footer-widget pt-130 pb-130">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <!--<div class="call-action-content text-center">
-                            <h2 class="action-title">MicroX Labs</h2>
-                            <p>
-                                R&D: Society for Innovation and development </br>
-                                Indian Institute of Science, Bangalore, India, 560012 </br>
-                            </p>
-                            <p>
-                                HomeCyte R&D: Institute for Tropical Medicine Tübingen,  </br>
-                                Tropenmedizin, Universität Tubingen, Wilhelmstraβe 27, </br>
-                                Germany
-                            </p>
-
-                        </div> --><!-- section title -->
-                        <div class="footer-content text-center">
-                            <ul>
-                                <li><a href="https://mobile.twitter.com/pratimeshlabs" target="_blank"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/microxlabs" target="_blank"><i class="lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div> <!-- footer content -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-        <div class="footer-copyright pb-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text text-center pt-20">
-                            <p>Copyright © 2020 MicroX Labs - All Rights Reserved.</p>
-                        </div> <!-- copyright text -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-    </footer>
-
-    <!--====== FOOTER PART ENDS ======-->
-
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
+              <div id="mobile_clinical_partners" class="carousel slide" data-wrap="false">
+                <div class="carousel-inner">
 
 
+                  <div class="carousel-item active">
+              <div
+                class="scientific_adv"
+              >
+
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 21.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">
+                      Prof. Velavan
+                    </p>
+                    <p class="values_content" style="font-size: 1rem">
+                     
+                    </p>
+                    <p class="card-text values_content">
+                      Infectious diseases, antimicrobial resistance, coronavirus, malaria, University of Tubingen, Germany.
+                    </p>
+                    <img src="assets/logo_04.png" style="width: 100%;" />
+                  </div>
+                </div>
+
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 22.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">Dr Ryan Shea Tan</p>
+                    <p class="values_content" style="font-size: 1rem">
+                      
+                    </p>
+                    <p class="card-text values_content">
+                      National Cancer Center, Singapore Chairman, IT enabled workgroup.
+                    </p>
+                    <img src="assets/logo_05.png" style="width: 100%;" />
+                  </div>
+                </div>
+
+                <div class="card scientific_advisors" style="margin-bottom: 2rem;">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 23.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">Jim Mulry</p>
+                    <p class="values_content" style="font-size: 1rem">
+                      
+                    </p>
+                    <p class="card-text values_content">
+                      Head of Diagnostics Merck Global Health Institute, 35 years of experience in hematology, sales and business development, Global Health Institute
+                    </p>
+                    <img src="assets/logo_06.png" style="width: 100%;" />
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+              <div
+                class="scientific_adv"
+              >
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 24.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">
+                      Prof. Nathan Swami
+                    </p>
+                    <p class="values_content" style="font-size: 1rem">
+                      
+                    </p>
+                    <p class="card-text values_content">
+                      Professor of Electrical & Computer Engineering at the, VA University of Virginia, USA
+                    </p>
+                    <img src="assets/logo_07.png" style="width: 100%;" />
+                  </div>
+                </div>
+
+                <div class="card scientific_advisors">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 25.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">Prof. Ewa Balcerczak</p>
+                    <p class="values_content" style="font-size: 1rem">
+                      Head of laboratory
+                    </p>
+                    <p class="card-text values_content">
+                      Medical University of Łódź, Horiba–Lodz, Poland
+                    </p>
+                    <img src="assets/logo_08.png" style="width: 100%;" />
+                  </div>
+                </div>
+
+                <div class="card scientific_advisors" style="margin-bottom: 2rem;">
+                  <img
+                    class="card-img-top team_member_image"
+                    src="assets/Image 26.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title team_member_name">Dr. De Botton</p>
+                    <p class="values_content" style="font-size: 1rem">
+                      
+                    </p>
+                    <p class="card-text values_content">
+                      Leukemia oncologist (20 years) Gustave Rossy, Paris
+                    </p>
+                    <img src="assets/logo_09.png" style="width: 100%;" />
+                  </div>
+                </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#mobile_clinical_partners" role="button" data-slide="prev" style="align-items: flex-end;margin-left: 10%;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 30%;"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mobile_clinical_partners" role="button" data-slide="next" style="align-items: flex-end;margin-right: 10%;">
+                  <span class="carousel-control-next-icon" aria-hidden="true" style="width: 30%;"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            </div>
+            </div>
+          <a
+            class="carousel-control-prev"
+            href="#advisors"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#advisors"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
 
 
+    <div
+      class="container"
+      style="
+        margin-top: 2rem;
+        border-bottom: #e5e5e5 solid 0.1em;
+        padding-bottom: 3rem;
+      "
+    >
+      <div class="row d-flex justify-content-between">
+        <img src="assets/p1.png" class="supp" width="15%"/>
+        <img src="assets/p2.png" class="supp" width="15%"/>
+        <img src="assets/p3.png" class="supp" width="15%"/>
+        <img src="assets/p4.png" class="supp" width="15%"/>
+        <img src="assets/p5.png" class="supp" width="15%"/>
+        <img src="assets/p6.png" class="supp" width="15%"/>
+      </div>
+    </div>
+
+    <!-- contact us section -->
+
+    <div id="contact_us" class="contact_us">
+      <div class="container">
+        <div class="center"><p class="message_text">Drop us a message</p></div>
+        <div class="contact_us_container">
+          <div class="message_box" style="margin-left: auto;margin-right:auto">
+            <form>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary send_button">
+                SEND
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <p class="sub_footer">
+          MicroX Sp. z o.o. implements the project "Development of an innovative
+          reader and a set of cartridges for the analysis of CBC + 3DIFF blood
+          cells and inflammatory markers for monitoring the health of patients
+          infected with coronavirus, including SARS-CoV-2 remotely", co-financed
+          under the Smart Growth Operational Program 2014-2020 , 1.1.1
+          "Industrial research and development works carried out by
+          enterprises", agreement no. POIR.01.01.01-00-2434 / 20
+        </p>
+        <div class="row d-flex justify-content-center">
+          <div class="contact_us_container box">
+            <img src="assets/p7.png" width="32%" />
+            <img src="assets/p8.png" width="32%" />
+            <img src="assets/p9.png" width="32%" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer" style="width: 100%">
+      <div
+        class="footer_container section"
+        style="
+          padding-top: 2rem;
+          border-bottom: #6c6b6b solid 0.0001em;
+        "
+      >
+        <a class="navbar-brand" href="#" style="padding-top: 0.5rem">
+          <img
+            src="assets/logo.png"
+            width="130"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <nav class="navbar navbar-light justify-content-end ">
+          <ul class="nav justify-content-end footer_container">
+              <a class="nav-link footers navbar_items" href="#about">About</a>
+              <a class="nav-link footers navbar_items" href="#solution">Solution</a>
+              <a class="nav-link footers navbar_items" href="#publications">Publications</a>
+              <a class="nav-link footers navbar_items" href="#team">Team</a>
+              <a class="nav-link footers navbar_items" href="#partners">Partners</a>
+              <a class="nav-link footers navbar_items" href="#contact_us">Contact Us</a>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer_container" style="width: 80%">
+        <p class="copyright">
+          Copyright © 2020 MicroX Labs - All Rights Reserved.
+        </p>
+        <div class="d-flex justify-content-between" style="width: 10%;display: flex;padding-bottom: 1rem;">
+          <i
+            class="fa fa-linkedin-square"
+            aria-hidden="true"
+            style="color: #ffffff;margin-right: 1rem;"
+          ></i>
+          <i
+            class="fa fa-facebook-square"
+            aria-hidden="true"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- function for hamburger icon and header -->
+    <script>
+      function myFunction() {
+        document.getElementById("hamburger").classList.toggle("change");
+        var y = document.getElementById("mobile_header");
+        var page=document.getElementById("page");
+        console.log(y.style.display)
+        if(y.style.display==='none'){
+            y.style.display = "block";
+            y.style.height="100vh";
+            page.style.display="none";
+
+        }else{
+            y.style.display="none";
+            page.style.display="block";
+        }
+      }
+    </script>
+
+<!-- on load task -->
+    <script>
+    function onLoad(){
+        let width = screen.width;
+        document.getElementById('hamburger').classList.remove('change')
+
+        if(width>'600'){
+            document.getElementById('mobile_header').style.display='none';
+            document.getElementById('web_header').style.display='flex';
+            page.style.display="block";
 
 
+        }else{
+            document.getElementById('web_header').style.display='none';
+            document.getElementById('mobile_header').style.display='none';
+            page.style.display="block";
 
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+        }
+}
+    </script>
 
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+    <script>
+        function checkitem()                        // check function
+{
+    var $this = $('#myCarousel');
+    if($('.carousel-inner .item:first').hasClass('active')) {
+        $this.children('.left.carousel-control').hide();
+        $this.children('.right.carousel-control').show();
+    } else if($('.carousel-inner .item:last').hasClass('active')) {
+        $this.children('.left.carousel-control').show();
+        $this.children('.right.carousel-control').hide();
+    } else {
+        $this.children('.carousel-control').show();
+    } 
+}
+    </script>
 
-    <!--====== Magnific Popup js ======-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <!--====== Parallax js ======-->
-    <script src="assets/js/parallax.min.js"></script>
-
-    <!--====== Counter Up js ======-->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-
-
-    <!--====== Appear js ======-->
-    <script src="assets/js/jquery.appear.min.js"></script>
-
-    <!--====== Scrolling js ======-->
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
