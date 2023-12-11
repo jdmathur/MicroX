@@ -98,7 +98,7 @@ letter-spacing: -0.45px;
 
 
 .teams_container{
-    width:100%;
+    width:60%;
     margin-top: 2rem;
     color:#333333;
     font-family: 'Nunito',sans-serif;
@@ -215,6 +215,7 @@ letter-spacing: -0.45px;
 }
 .team_member_name{
     font-size: 1.3rem;
+    overflow-wrap: normal;
 }
 
 .team_member_name, .values_title{
@@ -279,7 +280,7 @@ span{
 }
 
 .team_member_card{
-    width: 23%;
+    width: 45%;
     border: none;
     background-color: #F0F0EF;
     border-radius: 8px;
